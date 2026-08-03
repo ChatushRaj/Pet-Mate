@@ -1,0 +1,8 @@
+/* Base body/font styles now live in theme.css (shared design tokens).
+   This file is kept for CRA's default import structure. */
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
