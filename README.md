@@ -1,12 +1,45 @@
-# PetMate
+<div align="center">
 
-![License](https://img.shields.io/badge/license-MIT-blue.svg)
-![Node](https://img.shields.io/badge/node-%3E%3D18-brightgreen.svg)
-![React](https://img.shields.io/badge/react-18-61dafb.svg)
-![Build](https://img.shields.io/badge/build-passing-brightgreen.svg)
-![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)
+# 🐾 PetMate
 
-A pet adoption management platform connecting rescue organizations, pet centers, volunteers, and adopters. React frontend, Express + MySQL backend, JWT-based role authentication (admin / rescue organization / pet center).
+**A pet adoption and rescue management platform connecting rescue organisations, pet centres, volunteers and adopters.**
+
+[![React](https://img.shields.io/badge/React-18-61DAFB?logo=react&logoColor=black)](#)
+[![Node.js](https://img.shields.io/badge/Node.js-18+-339933?logo=nodedotjs&logoColor=white)](#)
+[![Express](https://img.shields.io/badge/Express-000000?logo=express&logoColor=white)](#)
+[![MySQL](https://img.shields.io/badge/MySQL-4479A1?logo=mysql&logoColor=white)](#)
+[![JWT](https://img.shields.io/badge/Auth-JWT%20%2B%20bcrypt-000000?logo=jsonwebtokens&logoColor=white)](#)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+
+</div>
+
+---
+
+## Features
+
+- **Role-based access** — separate dashboards for **admins**, **rescue organisations** and **pet centres**, enforced server-side with JWT and per-route role checks
+- **Full CRUD** for pets, adopters, volunteers, pet centres and rescue organisations
+- **Adoption workflow** — admins track and manage adoption records across the platform
+- **Secure by default** — bcrypt-hashed passwords, parameterised SQL everywhere, secrets only in `.env`
+- **Zero-setup demo mode** — without a database the API falls back to in-memory mock data, so the app is explorable immediately
+
+## Architecture
+
+```mermaid
+flowchart LR
+    U[Browser] --> C[React 18 client<br/>React Router]
+    C -- REST + JWT --> S[Express API<br/>27 routes]
+    S -- mysql2 · parameterised --> D[(MySQL)]
+    S -. no DB configured .-> M[In-memory<br/>demo data]
+```
+
+<details>
+<summary><b>Full application flow</b> (click to expand)</summary>
+<br/>
+
+![PetMate application flowchart](docs/images/app-flowchart.png)
+
+</details>
 
 ## Tech stack
 
@@ -114,4 +147,4 @@ If you skip the `.env` setup, the server automatically falls back to an in-memor
 
 ## License
 
-See [LICENSE](./LICENSE).
+[MIT](LICENSE) © Chatush Raj
