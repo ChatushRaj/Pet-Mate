@@ -15,6 +15,33 @@
 
 ---
 
+## Demo
+
+<p align="center">
+  <img src="docs/screenshots/demo.gif" alt="PetMate demo: admin signs in and opens rescue organisations, adoption records and the system overview" width="900">
+</p>
+
+## Screenshots
+
+| Sign in | Admin dashboard |
+|:---:|:---:|
+| ![Sign in](docs/screenshots/login.png) | ![Admin dashboard](docs/screenshots/admin-dashboard.png) |
+| **Rescue organisation dashboard** | **Pet centre dashboard** |
+| ![Rescue organisation dashboard](docs/screenshots/rescue-dashboard.png) | ![Pet centre dashboard](docs/screenshots/center-dashboard.png) |
+| **System overview (admin)** | **Adoption records (admin)** |
+| ![System overview](docs/screenshots/admin-overview.png) | ![Adoption records](docs/screenshots/admin-adoptions.png) |
+
+<details>
+<summary>More screens: pets, volunteers, adopters, rescue organisations</summary>
+
+| Pets (rescue org) | Volunteers (pet centre) |
+|:---:|:---:|
+| ![Pets](docs/screenshots/pets.png) | ![Volunteers](docs/screenshots/volunteers.png) |
+| **Adopters (pet centre)** | **Rescue organisations (admin)** |
+| ![Adopters](docs/screenshots/adopters.png) | ![Rescue organisations](docs/screenshots/admin-rescue-orgs.png) |
+
+</details>
+
 ## Features
 
 - **Role-based access** — separate dashboards for **admins**, **rescue organisations** and **pet centres**, enforced server-side with JWT and per-route role checks
