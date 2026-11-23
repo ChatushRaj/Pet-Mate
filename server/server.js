@@ -9,11 +9,18 @@ const jwt = require('jsonwebtoken');
 const app = express();
 const port = process.env.PORT || 9800;
 
+// A real database requires a real signing secret. The built-in fallback is only
+// allowed in demo mode (no database configured), where all data is mock data.
+const dbConfigured = ['DB_HOST', 'DB_USER', 'DB_NAME'].every((key) => process.env[key]);
 if (!process.env.JWT_SECRET) {
-  console.warn('WARNING: JWT_SECRET is not set in the environment. Using an insecure default. '
-    + 'Set JWT_SECRET in your .env file before deploying this anywhere real.');
+  if (dbConfigured) {
+    console.error('ERROR: JWT_SECRET is not set. Add a long random JWT_SECRET to server/.env '
+      + '(see .env.example) before connecting to a database.');
+    process.exit(1);
+  }
+  console.warn('WARNING: JWT_SECRET is not set - using a demo-only secret because no database is configured.');
 }
-const JWT_SECRET = process.env.JWT_SECRET || 'dev-only-insecure-secret-change-me';
+const JWT_SECRET = process.env.JWT_SECRET || 'demo-mode-only-secret';
 
 app.use(cors());
 app.use(express.json());
