@@ -9,7 +9,7 @@
 [![Express](https://img.shields.io/badge/Express-000000?logo=express&logoColor=white)](#)
 [![MySQL](https://img.shields.io/badge/MySQL-4479A1?logo=mysql&logoColor=white)](#)
 [![JWT](https://img.shields.io/badge/Auth-JWT%20%2B%20bcrypt-000000?logo=jsonwebtokens&logoColor=white)](#)
-[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![License: All rights reserved](https://img.shields.io/badge/License-All%20rights%20reserved-red.svg)](LICENSE)
 
 </div>
 
@@ -147,4 +147,6 @@ If you skip the `.env` setup, the server automatically falls back to an in-memor
 
 ## License
 
-[MIT](LICENSE) © Chatush Raj
+Copyright © 2026 Chatush Raj Thotamsetty. **All rights reserved.**
+
+This code is published for viewing and evaluation only. It may not be copied, reused, modified or redistributed, in whole or in part, without written permission. See [LICENSE](LICENSE) for the full terms.

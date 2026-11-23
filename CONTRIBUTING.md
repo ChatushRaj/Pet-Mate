@@ -2,6 +2,8 @@
 
 Thanks for your interest in contributing! This is a portfolio project, but it's built and maintained like a real one — issues and pull requests are welcome.
 
+> **Licence:** this project is *not* open source — see [LICENSE](LICENSE). Issues and suggestions are welcome; by submitting a pull request you agree that the copyright holder may use your contribution under this project's terms.
+
 ## Getting started
 
 1. Fork the repo and clone your fork.

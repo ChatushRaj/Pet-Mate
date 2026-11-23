@@ -15,7 +15,7 @@
     "mysql"
   ],
   "author": "Chatush Raj",
-  "license": "ISC",
+  "license": "UNLICENSED",
   "description": "PetMate - Enhanced pet adoption management system with role-based access",
   "dependencies": {
     "bcrypt": "^6.0.0",
